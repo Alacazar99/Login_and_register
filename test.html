@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>test</title>
+	<script>
+		// var name = "GGG";
+		// var address = "123";
+		// var age = 30;
+		// var email = "alacazar@163.com";
+		// var gz = 2000;
+		// console.log(name);
+		// console.log(address);
+		// console.log(age);
+		// console.log(email);
+		// console.log(gz);
+
+		// var name = prompt("请输入您的名字：");
+		// alert(name);
+		// console.log(name);
+		// var name = "GGG";
+		// alert(name)
+		// console.log(name);
+		// var sex;
+		// console.log(sex);
+		// 不声明，直接赋值；
+		// qq = 110;
+		// console.log(qq);
+
+		// var app = 01000;
+		// var str = "pink";
+		// var x = 10;
+		// x = "GGG"
+		// console.log(x);
+		// console.log(app);
+		// console.log(Number.MAX_VALUE);
+		// console.log(Number.MIN_VALUE); 
+		// // alert("balbalanfdsnlfsn\nofdfdfiosf\ndjfgjprgjdfog");  
+		// var str = "i sdfnlk sdfnlds";
+		// alert("字符串长度："+ str.length);
+		// var age = prompt("请输入您的年龄：");
+		// var str = "您今年"+age+"岁";
+		// alert(str);
+
+		// var variable = undefined;
+		// alert(typeof variable);
+		// console.log(variable + 1);  // 结果：NaN
+		// var space = null;
+		// alert(typeof variable );
+		// console.log(typeof space + 1);
+		
+		// var age = prompt("年龄：");
+		// console.log(age);     
+		// console.log(parseInt("3.99"));  
+		// console.log(parseInt("123sdfd"));
+		// console.log(parseFloat("123.123dsf"));
+		// var str = "1243.345";
+		// console.log(Number(str));
+		// 利用 - * / 算数运算；隐式转换；
+		// var age = prompt("请输入您出生的年份：");
+		// var num = 2020;
+		// alert("你今年："+(num-age) + "岁");
+		// var num1 = prompt("第一个值：");
+		// var num2 = prompt("第二个值：");
+		// var sumnum = parseFloat(num1) + parseFloat(num2);
+		// alert("和：" + sumnum);
+		// alert(Boolean(""));
+		// alert(Boolean("body"));
+		// var c = 10;
+		// c++;
+		// console.log(c++); // c++ = 10   c = 11
+		// console.log(++c);
+		// console.log(12 == "12");
+		// console.log(12 === " 12");
+		// console.log(12 != "12");
+
+		// console.log(123>122 || c >= 10);
+		// console.log(c);
+		// var year = prompt("请输入您要检测的年份：");
+		// if (year % 4 == 0 && year % 100 != 0 ){
+		// 	alert(year + "是闰年");
+		// }else{
+		// 	alert(year + "不是闰年");
+		// }
+		// var sco = prompt("黄绍杭这次数学多少分呀：");
+		// if (sco >= 90){
+		// 	alert("哦呦，考上90啦！表扬");
+		// }else if (sco >= 80){
+		// 	alert("哦豁，才80多..");
+		// }else if (sco >= 70){
+		// 	alert("没上80！！要继续努努力哦");
+		// }else{
+		// 	alert("分数不高，很丢人哦！！");
+		// }
+		// var sum  = 0;
+		// for (var i = 1; i <= 100; i++) {
+		// 	sum = sum + i;
+		// }
+		// console.log(sum /100);
+		// var res = 0;
+		// for (var i = 0; i <= 100; i++) {
+		// 	if (i %3 == 0){
+		// 		res += i;
+		// 	}	
+		// }
+		// console.log(res);
+		// var num = prompt("请输入班级人数：");
+		// var res = 0;
+		// for (var i = 1; i <= num; i++) {
+		// 	var sco = prompt("请输入第"+i+"个人的成绩");
+			// res += parseFloat(sco);
+		// }
+		// var avg = res/num;
+		// alert("总分：" + res);
+		// alert("平均分：" + avg);
+		// var rows = prompt("请输入行数：");
+		// var cols = prompt("请输入列数：");
+		// var str = ''
+
+		// for (var i = 1; i <= parseFloat(rows); i++){
+		// 	for (var j = 1; j <= i; j++){
+		// 		str += j + "*" + i + "=" + i*j + "\t"
+		// 	}
+		// 	str += "\n"
+		// }
+		// console.log(str);
+		// var arr = [23,45,23,4,5,65,76];
+		// arr[7] = "234";
+		// var str = "";
+		// for (var i = 0; i < arr.length; i++) {
+		// 	str += arr[i];
+		// }
+		// console.log(arr);
+		// console.log(str);
+		// var arr = []
+		// for (var i = 0; i < 20; i++) {
+		// 	arr[i] = i+1;
+		// }
+		// console.log(arr);
+		// var newarr = [];
+		// for (var i = 0; i < arr.length; i++) {
+		// 	if (arr[i] > 10){
+		// 		newarr[newarr.length] = arr[i];
+		// 	}
+		// }
+		// console.log(newarr);
+		// var arr = [23,45,23,4,5,65,76];
+		// var newarr = [];
+		// for (var i = arr.length - 1; i >= 0; i--) {
+		// 	newarr[newarr.length] = arr[i];
+		// }
+		// console.log(arr);
+		// console.log(newarr);
+		// 冒泡排序；
+		// var arr = [23,45,23,4,5,65,76];
+		// for (var i = 0; i < arr.length-1; i++) {
+		// 	for (var j = i;j < arr.length;j++){
+		// 		if (arr[i] > arr[j]){
+		// 			var tmp = arr[i];
+		// 			arr[i] = arr[j];
+		// 			arr[j] = tmp;}
+		// 	}
+		// }
+		// console.log(arr);
+		// function getSum(num){
+		// 	var res = 0;
+		// 	for (var i = 0; i <= num; i++){
+		// 		res += i
+		// 	}
+		// 	console.log(res);
+		// }
+		// getSum(100);
+		// function getMax(num1,num2) {
+		// 	// body...
+		// 	return num1 > num2 ? num1:num2
+		// }
+		// console.log(getMax(12,24));
+		// var arr = [23,45,23,4,5,65,76];
+		// console.log(arr.reverse());
+
+		// function reverse(arr){
+		// 	var res = []
+		// 	for (var i = arr.length-1; i >= 0; i--) {
+		// 		res[res.length] = arr[i];
+		// 	}
+		// 	return res;
+		// }
+		// console.log(reverse(arr));
+		// var num = 123;
+		// fun();
+		// function fun(){
+		// 	// var num = 10;
+		// 	function func(){
+		// 		console.log(num);
+		// 	}
+		// 	func();
+		// }
+		// var obj = {
+		// 	uname: "alacazar",
+		// 	age:123,
+		// 	say:function(){
+		// 		console.log("hahahaha！~");
+		// 	}
+		// }
+		// console.log(obj.say());
+		// console.log(obj["age"]);
+		// obj.say();
+		// var obj = new Object();  // 创建一个对象；
+		// obj.uname = "GGK";
+		// obj.age = 18;
+		// obj.sex = "男";
+		// obj.say = function(){
+		// 	console.log("Hi!~");
+		// }
+		// console.log(obj);
+		// console.log(obj["age"]);
+		// 构造函数；
+
+		// function Star(name,age,sex){
+		// 	this.name = name;
+		// 	this.age = age;
+		// 	this.sex = sex;
+		// 	this.func = function(sang){
+		// 		console.log(sang);
+		// 	}
+		// }
+		// var lde = new Star('123',20,'12314');
+		// console.log(typeof lde);
+		// console.log(lde.name);
+		// lde.func('GGG');
+
+		// function QuickSort(arr,start,end){  // 快速排序js;
+		// 	if (start >= end){
+		// 		return 
+		// 	}
+		// 	var mid = lis[start];
+		// 	var left = start;
+		// 	var right = end;
+
+		// 	while (left < right){
+		// 		while (left < right && arr[right] > mid){
+		// 			right -= 1;
+		// 		}
+		// 		arr[left] = arr[right];
+		// 		while (left < right && arr[left] <= mid){
+		// 			left += 1;
+		// 		}
+		// 		arr[left],arr[right] = mid,arr[left];
+		// 	}
+		// 	QuickSort(arr,start,left-1);
+		// 	QuickSort(arr,left + 1,end);
+		// }
+		// var lis = [3,3,45,56,456,4567,31,34,10,123];
+		// QuickSort(lis,0,9)
+		// console.log(lis);
+
+		// console.log(Math.PI);
+		// console.log(Math.max(12,34,54));
+		// console.log(Math.min(1,23,4,45,6,45));
+
+		// var myMath = {   // 自己重写math方法；
+		// 	PI:3.14132432523423432,
+		// 	max: function(){
+		// 		var mak = arguments[0];
+		// 		for (var i = 0; i < arguments.length; i++) {
+		// 			if(arguments[i] > mak){
+		// 				mak = arguments[i];
+		// 			}
+		// 		}
+		// 		return mak;
+		// 	},
+		// 	min: function(){
+		// 		var min = arguments[0];
+		// 		for (var i = 0; i < arguments.length; i++) {
+		// 			if(arguments[i] < min){
+		// 				min = arguments[i];
+		// 			}
+		// 		}
+		// 		return min;
+		// 	}
+		// }
+		// console.log(myMath.PI);
+		// console.log(myMath.max(12,34,54));
+		// console.log(myMath.min(1,23,4,45,6,45));
+
+		// console.log(Math.floor(1.9)); //1  向下取整；floor
+		// console.log(Math.ceil(1.01));   // 2  向上取整；ceil
+		// console.log(Math.round(1.5));   // 2
+		// console.log(Math.round(-1.5));  // -1 round 四舍五入（取大值）；
+		// console.log(Math.random());
+		// function getRandom(min,max){
+		// 	return Math.floor(Math.random() * (max-min+1)) + min;
+		// }
+		// var random = getRandom(1,50);  //
+		// var i = 0;
+		// while ( i < 10){
+		// 	i++; 
+		// 	var num = prompt("猜猜这个数字是多少？");
+		// 	if(num < random){
+		// 		alert("你猜小啦！");
+		// 	}else if (num > random) {
+		// 		alert("你猜大了！~");
+		// 	}else{
+		// 		alert("你猜中啦！~");
+		// 		break;
+		// 	}
+		// }
+		// alert("你没有机会啦！")
+
+		// var date = new Date();
+		// console.log(date);
+		// var date1 = new Date();
+		// console.log(date1-date);
+		// console.log(date.getFullYear());
+		// console.log(date.getMonth() + 1);
+
+		// function getTimer(){
+		// 	var time = new Date();
+		// 	var h = time.getHours();
+		// 	h = h < 10 ? '0' + h:h;
+		// 	var m = time.getMinutes();
+		// 	m = m <10 ? '0' + m:m;
+		// 	var s = time.getSeconds();
+		// 	s = s<10 ? '0' + s:s;
+		// 	return h + ":" + m + ':' + s;
+		// }
+		// console.log(getTimer());
+
+		// var date =  new Date();
+		// console.log(date.valueOf());
+		// console.log(date.getTime());
+
+		// 倒计时案例；
+
+		// function conutDown(time){
+		// 	var now = +new Date();
+		// 	var inputTime = +new Date(time);
+		// 	var times = (inputTime - now)/1000;  //秒数；
+		// 	var d = parseInt(times /60/60/24);
+		// 	d = d < 10 ? '0' + d:d;
+		// 	var h = parseInt(times /60/60%24);
+		// 	h = h < 10 ? '0' + h:h;
+		// 	var m = parseInt(times /60 %60);
+		// 	m = m < 10 ? '0' + m:m;
+		// 	var s = parseInt(times %60);
+		// 	s = s < 10 ? '0'+ s:s;
+ 
+		// 	return d + '天' + h +'时' + m+'分' + s + '秒';
+		// }
+		// console.log(conutDown('2020-6-1 12:00:00'));
+		// var date = new Date();
+		// console.log(date);
+
+		// // push() 数组末尾添加元素；
+		// var arr = [1,2,3];
+		// console.log(arr.push(4,5,6,'yellow'));  //返回新数组长度；
+		// console.log(arr);
+
+		// // unshift() 数组开头添加元素；
+		// arr.unshift(666,'KingS');
+		// console.log(arr);
+
+		// // pop() 删除数组的最后一个元素；
+		// console.log(arr.pop());
+		// console.log(arr);
+		// console.log(arr.shift());  // 删除数组第一个元素；
+		// console.log(arr);
+
+		var arr = [1200,1600,1200,2001];
+		// var newarr = [];
+		// for (var i = 0; i < arr.length; i++) {
+		// 	if(arr[i] < 2000){
+		// 		newarr.push(arr[i]);
+		// 		// newarr[newarr.length] = arr[i];
+		// 	}
+		// }
+		// console.log(newarr);
+		// console.log(arr.indexOf(1200));
+		// console.log(arr.lastIndexOf(1200));
+		// var lis = ['a','v','b','m','n','m','a'];
+		// var res = [];
+		// for (var i = 0; i < lis.length; i++) {
+		// 	if(res.indexOf(lis[i]) == -1){
+		// 		res.push(lis[i]);
+		// 	}
+		// }
+		// console.log(res);
+		// console.log(arr.toString());  // 转化为字符串；
+
+		// console.log(arr.join("---"));  // 转化
+
+		// var str = 'King';
+		// console.log(str.length);  // 基本包装类型；包装为复杂数据类型；
+
+		// var str = 'aslfdnaaaanaelilasdfnjnslkdflkasdjf';
+		// var index = str.indexOf('a');
+		// var num = 0;
+		// while(index != -1){
+		// 	console.log(index);
+		// 	num ++;
+		// 	index = str.indexOf('a',index+1);
+		// }
+		// console.log("次数：" + num);
+
+		// var str = 'asdffdghj';
+		// // console.log(str.charAt(3));
+		// // console.log(str.charCodeAt(3));
+
+		// var o = {};
+		// for (var i = 0; i < str.length; i++) {
+		// 	var char = str.charAt(i);
+		// 	if(o[char]){
+		// 		o[char] ++;
+		// 	}else{
+		// 		o[char] = 1;
+		// 	}
+		// }
+		// console.log(o);
+		// var max = 0;
+		// var cha = '';
+		// for(var k in o){
+		// 	if(o[k] > max){
+		// 		max = o[k] 
+		// 		cha = k;
+		// 	}
+		// }
+		// console.log(max);
+		// console.log(cha);
+  
+		var str1 = '13289437512938473';
+		var str2 = '345364';
+		console.log(str1 + str2);
+		// while (str1.indexOf('1') != -1){
+		// 	str1.replace('1',"*");
+		// }
+		console.log(str1);
+
+		console.log(str2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
