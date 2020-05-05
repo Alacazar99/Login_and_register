@@ -1,0 +1,37 @@
+.slider-box{
+	width: 3540px;
+	/*border: 3px solid red;*/
+	/*transform: */
+	animation-name: sliders;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+}
+.slider-box:hover{
+	animation-play-state: paused;
+}
+
+.slider{
+	overflow: hidden;
+	/*border: 2px solid black;*/
+	width: 590px;
+	height: 470px;
+}
+
+.slider-box > img{
+	float: left;
+}
+
+@keyframes sliders{
+	8%{transform: translateX(0);}
+	12%{transform: translateX(0);}
+	25%{transform: translateX(-590px);}
+	33%{transform: translateX(-590px);}
+	42%{transform: translateX(-1180px);}
+	50%{transform: translateX(-1180px);}
+	58%{transform: translateX(-1770px);}
+	66%{transform: translateX(-1770px);}
+	75%{transform: translateX(-2360px);}
+	83%{transform: translateX(-2360px);}
+	/*91%{transform: translateX(-2950px);}*/
+	100%{transform: translateX(-2950px);}
+}

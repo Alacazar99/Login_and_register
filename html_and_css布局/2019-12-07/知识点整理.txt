@@ -1,0 +1,100 @@
+css使用语法：
+1.嵌入到html标记里
+2.包含到head中style标记里
+3.独立的css文件
+
+就近原则  ？
+
+css常用属性
+	    background-color: lightpink;
+     	color: red;
+     	font-size: 36px;
+     	width: 50%;
+     	height: 300px;
+
+font-family  	设置字体
+font-size	设置文本大小
+font-weight	设置文本宽度
+line-height	设置行高
+text-decoration	设置文本效果，下划线/underline、上划线/overline、删除线/line-through、闪烁效果/  
+blink、none等
+letter-spacing	设置字符间距
+word-spacing 	设置单词间距
+Color	设置颜色
+text-align	设置文本对其方式
+
+
+背景设置
+background-color  	设置背景颜色
+background-image	设置背景图片
+background-repeat	设置平铺方式 no-repeat|repeat-x|repeat-y
+background-position	设置背景图片的位置/right top/center......   /50% 50%
+background-size     设置背景的大小  100% 100%   
+background-clip     设置背景的裁切  border-box
+
+背景设置扩展
+线性渐变
+        background-image: linear-gradient(90deg,blue,red);
+
+	   /*background-color: red;*/
+       	background-image:linear-gradient(to bottom,green,red);
+       	/*兼容谷歌*/
+        background-image: -webkit-linear-gradient(to bottom,green,red);
+        /*兼容火狐*/
+        background-image: -moz-linear-gradient(to bottom,green,red);
+        /*兼容opera*/
+        background-image: -o-linear-gradient(to bottom,green,red);
+        /*兼容ie*/
+        background-image: -ms-linear-gradient(to bottom,green,red);
+
+彩虹色渐变
+background-image: linear-gradient(to bottom,orange,yellow,green,blue,indigo,violet);
+
+
+径向渐变
+background-image: radial-gradient(red, yellow, green,blue);
+
+
+边框设置
+       /* border-top-style: dashed; solid 细线   double 双线  dotted圆形虚线  dashed方形虚线
+        border-top-color: gray;
+        border-top-width: 10px;*/
+
+        border-top:double 10px gray;
+        border-left:;
+        border-right: ;
+        border-bottom: 
+        border:dotted 10px red;
+边框的扩展
+圆角边的设置
+        border-top-left-radius: 10%;
+        border-top-right-radius:20%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 50%; 
+
+        ---------复合属性
+        border-radius: 10%  20% 30% 50%;
+
+盒模型属性---元素的内部填充和外部距离
+padding  	设置填充效果
+padding-top 	设置上填充距离
+padding-…	设置上、左、下、右填充距离
+margin	设置间距效果
+margin-top	设置上边距
+margin-…	设置上、左、下、右边距
+
+盒模型
+
+盒子大小=width/height+padding+border+margin
+
+元素显示方式：
+display: inline-block/block/inline/none/inline-item;
+
+
+元素定位属性
+position 	设置定位方式，absolute，static等
+z-index 	设置Z轴方向排列顺序
+top 	设置距顶端距离
+left	设置距左边距离
+right	设置距右边距离
+bottom	设置下端距离

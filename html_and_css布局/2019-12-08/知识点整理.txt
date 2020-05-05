@@ -1,0 +1,48 @@
+元素定位：
+position 	设置定位方式，absolute，static等
+z-index 	设置Z轴方向排列顺序
+top 	设置距顶端距离
+left	设置距左边距离
+right	设置距右边距离
+bottom	设置下端距离
+
+
+position: static;  静态相对位置，不脱离文档流
+position: absolute;绝对定位，元素按指定位置显示，脱离文档流（不占据文档的位置）
+position: relative; 相对定位
+position: fixed;    固定位置
+
+父级元素如果没有设置定位属性(absolute/relative)，子级元素的定位 会向上匹配定位设置，如果所有的父级元素都没有定位属性，
+则相对body进行位置显示。
+
+如果父级有定位属性，按父级显示元素位置。
+
+
+页面布局属性:
+
+float  	设置元素如何浮动，none | left | right 
+clear	清除浮动占位，none | left | right | both 
+display	设置元素显示方式，none | block | inline | list-block
+overflow 	设置当元素内容超过其指定高、宽时如何管理内容，
+visible | auto | hidden | scroll 
+
+
+
+css3新特性
+
+元素倒影
+box-reflect:
+below | above | left | right    0/距离
+
+注意兼容性处理
+
+css3渐变绘图
+
+rgb(100,200,120);
+
+
+transparent  类似rgba(0,0,0,0)
+RGBA 是代表Red（红色） Green（绿色） Blue（蓝色）和 Alpha（不透明度）
+-webkit-box-reflect:right 5px -webkit-gradient
+(linear,left top,left bottom,from(transparent),to(rgba(250,250,250,1)));
+

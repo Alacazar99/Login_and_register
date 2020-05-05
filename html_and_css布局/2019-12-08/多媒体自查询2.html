@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8"> 
+<title>菜单</title> 
+<style>
+
+*{
+	margin:0;padding:0;
+}
+
+#leftsidebar {float: none;width: auto;}
+
+
+.menuitem {
+    background : #CDF0F6;
+    border:1px solid #d4d4d4;
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+    display: inline-block;
+}
+/*当页面小于600px*/
+@media screen and (max-width: 600px) {
+    #leftsidebar {
+      height: 100px; 
+    	width: 200px;
+      float: left;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="box">
+  <div id="leftsidebar">
+    <ul id="menulist">
+      <li class="menuitem">Menu-item 1</li>
+      <li class="menuitem">Menu-item 2</li>
+      <li class="menuitem">Menu-item 3</li>
+      <li class="menuitem">Menu-item 4</li>
+      <li class="menuitem">Menu-item 5</li>
+   </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

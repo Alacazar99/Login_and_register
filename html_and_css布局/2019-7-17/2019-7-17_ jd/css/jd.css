@@ -1,0 +1,109 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	background: #f0f3ef;
+}
+.main-nav{
+	background: #e3e4e5;
+/*	height: 2em;*/
+	border-bottom: 1px solid #ddd;
+	min-width: 1190px;
+	font-size: 12px;
+	font-family: Microsoft YaHei;
+}
+.main-nav .w{
+	width: 1190px;
+	height: 30px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.nav-list{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.nav-list li{
+	/*padding: 7px 16px;*/
+	border:1px solid transparent;
+	box-sizing: border-box;
+}
+.nav-list li.line{
+	width: 1px;
+	height: 10px;
+	background: #999;
+	margin: auto 3px;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	color: #999;
+	/*border-right: 1px solid #999;*/
+	display: inline-block;
+	padding: 6px 8px;
+	/*border: 1px solid transparent;
+	box-sizing: border-box;*/
+}
+.nav-list li a i{
+	color: #999;
+	font-size: 16px;
+	vertical-align: bottom;
+	display: inline-block;
+	padding-left: 2px;
+}
+.nav-list li a:hover{
+	color: red;
+}
+.nav-list li a.red-font{
+	color: red;
+}
+.right{
+	float: right;
+}
+
+.nav-list li.down:hover{
+	background: #FFF;
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #FFF;
+}
+.nav-list li.down{
+	position: relative;
+}
+
+.nav-list li.down .second-menu{
+	position: absolute;
+	top: 100%;
+	background: white;
+	transform: translateY(-1px);
+	border:1px solid #ddd;
+	border-top: none;
+	display: none;
+}
+.nav-list li .down:hover > .second-menu{
+	display: block;
+}
+
+.nav-list li .down.myjd .second-menu{
+ 	width: 200px;
+ 	left: 0;
+ }
+.nav-list li .down.myjd .second-menu > a{
+	display: inline-block;
+	width: 80px;
+}
+.nav-list li .down.myjd .second-menu > h1{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 8px;
+	margin: 0;
+	padding-bottom: 3;
+	color: #333;
+}
+.nav-list li .down.myjd .second-menu .hr{
+	background: #ddd;
+	width: 100%;
+	height: 1px;
+
+}
+

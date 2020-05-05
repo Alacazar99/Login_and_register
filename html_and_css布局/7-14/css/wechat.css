@@ -1,0 +1,100 @@
+body,html {
+	padding: 0;
+	margin: 0;
+	font-family:微软雅黑;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 3em;
+	background: #eee;
+	line-height: 3em;
+	padding: 0 1em;
+	color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+header label {
+	font-size: 14px;
+	font-weight: bold;
+}
+header .icon_box img{
+	width: 1.2em;
+	height: 1.2em;
+	vertical-align: text-bottom;
+	margin-left: 0.5em;
+}
+/**
+* position:static 默认定位方式。
+           fixed  固定定位，元素脱离文档流。
+           relative  相对于自己本身的位置进行定位，元素不脱离文档流;
+           absolute  相对于父亲中使用了relative的元素进行定位，并脱离文档流。
+           如果父亲中，没有使用relative的元素，就相对于body进行定位。
+*/
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 4em;
+	background: #eee;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.footer-item * {
+	display: block;
+	text-align: center;
+}
+
+.footer-item img {
+	width: 2em;
+}
+.footer-item label{
+	font-size: 12px;
+}
+
+.user-list {
+	list-style: none;
+	padding: 0;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+.user-item {
+	position: relative;
+	margin-top: 5px;
+}
+
+.user-item img {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+}
+.user-item .msg {
+	padding: 0.5em 66px;
+}
+.user-item .msg label {
+	font-weight: bold;
+	color: #333;
+}
+.user-item .msg p {
+	margin: 0;
+	color: #888;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.user-item .time {
+	position: absolute;
+	right: 0.5em;
+	top: 0.5em;
+	width: 50px;
+	height: 50px;
+}

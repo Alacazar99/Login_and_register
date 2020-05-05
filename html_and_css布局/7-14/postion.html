@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>position</title>
+	<style type="text/css">
+	html,body{
+		margin: 0;
+		padding: 0;
+	}
+		.outter {
+			background: #ddd;
+			width: 500px;
+			height: 500px;
+			margin: 100px auto;
+			position: relative;
+		}
+		.div {
+			height: 100px;
+			width: 100px;
+			margin-bottom: 10px;
+		}
+		.div1 {
+			background: red;
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		.div2 {
+			background: green;
+		}
+		.div3 {
+			background: blue;
+		}
+		.div4 {
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="outter">
+		<div class="div div1">x</div>
+		<div class="div div2">1</div>
+		<div class="div div3">2</div>
+		<div class="div div4">3</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件</title>
+	<script type="text/javascript" src="./event.js"></script>
+	<style type="text/css">
+		#div1{
+			width: 300px;
+			height: 300px;
+			background: #aaa;
+		}
+		#div2{
+			width: 200px;
+			height: 200px;
+			background: #afa;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1" onclick="b1(event)">
+		<div id="div2" onclick="b2(event)"></div>
+	</div>
+	<div onclick="b3(event)"><a href="http://www.baidu.com" >百度一下</a></div>
+</body>
+</html>
